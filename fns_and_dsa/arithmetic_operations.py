@@ -6,10 +6,11 @@ def perform_operation(num1,num2,operation):
     elif operation == 'multiply':
         print(num1*num2)
     elif operation == 'divide':
-        if num2 != 0:
-            print(num1/num2)
+        if num2 == 0:
+            raise ZeroDivisionError("You are attempting to divide by 0!!")
         else:
-            print("You are attempting to divide by 0!!")
+            print(num1/num2)
+
     else:
         print("Please enter a valid operation!")
 
