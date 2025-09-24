@@ -1,18 +1,19 @@
 def perform_operation(num1,num2,operation):
     if operation == 'add':
-        print(num1+num2)
+        soln=num1+num2
     elif operation == 'subtract':
-        print(num1-num2)
+        soln=num1-num2
     elif operation == 'multiply':
-        print(num1*num2)
+        soln=num1*num2
     elif operation == 'divide':
         if num2 == 0:
             raise ZeroDivisionError("You are attempting to divide by 0!!")
         else:
-            print(num1/num2)
+            soln=num1/num2
 
     else:
         print("Please enter a valid operation!")
+    return soln
 
 
 from arithmetic_operations import perform_operation
