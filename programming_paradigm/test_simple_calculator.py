@@ -38,7 +38,7 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_multiplication_with_zero(self):
         self.assertEqual(self.calc.multiply(5, 0), 0)
 
-    def test_multiplication_negative_numbers(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(-2, -3), 6)
 
     def test_multiplication_mixed_signs(self):
@@ -48,7 +48,7 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
 
-    def test_division_resulting_in_float(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(7, 2), 3.5)
 
     def test_division_by_zero(self):
