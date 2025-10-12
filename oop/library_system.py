@@ -30,6 +30,7 @@ class Library:
         if books == None:
             books = []
         self.books = books
+        self.books = []
 
     def add_book(self, book):
         self.books.append(book)        
